@@ -3,13 +3,6 @@ import 'package:flutter/material.dart';
 import 'parameter.dart';
 import 'graph.dart';
 
-// v0
-const v0 = 0.0;
-// E(v)
-const eVoltage = 5.0;
-// τ
-const tau = 1.0;
-
 void main() async {
   runApp(MyApp());
 }
@@ -21,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
             appBar: AppBar(
-              title: const Text('回路シュミレータ'),
+              title: const Text('回路シュミレータ　　E=$EVOLTAGE'),
             ),
             body: const Padding(
               padding: EdgeInsets.all(24),

@@ -50,6 +50,13 @@ LineChartData graphData() {
       ),
     ],
     titlesData: const FlTitlesData(
+      topTitles: AxisTitles(
+        axisNameWidget: Text('RC直列回路におけるコンデンサの電圧', style: TextStyle(fontSize: 20)),
+        axisNameSize: 48,
+        sideTitles: SideTitles(
+          showTitles: false,
+        ),
+      ),
       bottomTitles: AxisTitles(
         axisNameWidget: Text('時間 t　(s)'),
         axisNameSize: 24,
@@ -64,11 +71,6 @@ LineChartData graphData() {
         sideTitles: SideTitles(
           showTitles: true,
           reservedSize: 40,
-        ),
-      ),
-      topTitles: AxisTitles(
-        sideTitles: SideTitles(
-          showTitles: false,
         ),
       ),
       rightTitles: AxisTitles(

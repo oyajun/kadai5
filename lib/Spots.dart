@@ -47,9 +47,9 @@ class Spots {
     List<FlSpot> spots = [FlSpot(t, v)];
 
     while (!(t > MAXTIME)) {
+      t += deltaT;
       v = eVoltage * (1 - exp(-t / tau)) + v0 * exp(-t / tau);
       spots.add(FlSpot(t, v));
-      t += deltaT;
     }
     return spots;
   }
@@ -60,9 +60,9 @@ class Spots {
     List<FlSpot> spots = [FlSpot(t, v)];
 
     while (!(t > MAXTIME)) {
+      t += deltaT;
       v = (eVoltage - v) * deltaT / tau + v;
       spots.add(FlSpot(t, v));
-      t += deltaT;
     }
     return spots;
   }
